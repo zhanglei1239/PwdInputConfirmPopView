@@ -15,6 +15,10 @@
 		0441A9E11C2BC8E6005A141D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0441A9DF1C2BC8E6005A141D /* LaunchScreen.storyboard */; };
 		0441A9EC1C2BC8E6005A141D /* PwdInputConfirmPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441A9EB1C2BC8E6005A141D /* PwdInputConfirmPopViewTests.m */; };
 		0441A9F71C2BC8E6005A141D /* PwdInputConfirmPopViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441A9F61C2BC8E6005A141D /* PwdInputConfirmPopViewUITests.m */; };
+		0441AA071C2BC992005A141D /* ConfirmPayPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441AA061C2BC992005A141D /* ConfirmPayPopView.m */; };
+		0441AA0E1C2BCCA6005A141D /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441AA0B1C2BCCA6005A141D /* Toast+UIView.m */; };
+		0441AA0F1C2BCCA6005A141D /* ToastDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441AA0D1C2BCCA6005A141D /* ToastDisplay.m */; };
+		0441AA141C2BD57A005A141D /* ZLTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441AA131C2BD57A005A141D /* ZLTextFiled.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,16 @@
 		0441A9F21C2BC8E6005A141D /* PwdInputConfirmPopViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PwdInputConfirmPopViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0441A9F61C2BC8E6005A141D /* PwdInputConfirmPopViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PwdInputConfirmPopViewUITests.m; sourceTree = "<group>"; };
 		0441A9F81C2BC8E6005A141D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0441AA051C2BC992005A141D /* ConfirmPayPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfirmPayPopView.h; path = ConfirmPopView/ConfirmPayPopView.h; sourceTree = "<group>"; };
+		0441AA061C2BC992005A141D /* ConfirmPayPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfirmPayPopView.m; path = ConfirmPopView/ConfirmPayPopView.m; sourceTree = "<group>"; };
+		0441AA081C2BCAEF005A141D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0441AA0A1C2BCCA6005A141D /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Toast+UIView.h"; path = "Toast/Toast+UIView.h"; sourceTree = "<group>"; };
+		0441AA0B1C2BCCA6005A141D /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Toast+UIView.m"; path = "Toast/Toast+UIView.m"; sourceTree = "<group>"; };
+		0441AA0C1C2BCCA6005A141D /* ToastDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToastDisplay.h; path = Toast/ToastDisplay.h; sourceTree = "<group>"; };
+		0441AA0D1C2BCCA6005A141D /* ToastDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToastDisplay.m; path = Toast/ToastDisplay.m; sourceTree = "<group>"; };
+		0441AA101C2BCCBC005A141D /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Toast/SynthesizeSingleton.h; sourceTree = "<group>"; };
+		0441AA121C2BD57A005A141D /* ZLTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLTextFiled.h; path = ZLTextFiled/ZLTextFiled.h; sourceTree = "<group>"; };
+		0441AA131C2BD57A005A141D /* ZLTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLTextFiled.m; path = ZLTextFiled/ZLTextFiled.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,9 @@
 		0441A9D01C2BC8E6005A141D /* PwdInputConfirmPopView */ = {
 			isa = PBXGroup;
 			children = (
+				0441AA111C2BD54B005A141D /* ZLTextFiled */,
+				0441AA091C2BCC9B005A141D /* Toast */,
+				0441AA041C2BC95F005A141D /* ConfirmPopView */,
 				0441A9D41C2BC8E6005A141D /* AppDelegate.h */,
 				0441A9D51C2BC8E6005A141D /* AppDelegate.m */,
 				0441A9D71C2BC8E6005A141D /* ViewController.h */,
@@ -118,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0441A9D21C2BC8E6005A141D /* main.m */,
+				0441AA081C2BCAEF005A141D /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +156,36 @@
 				0441A9F81C2BC8E6005A141D /* Info.plist */,
 			);
 			path = PwdInputConfirmPopViewUITests;
+			sourceTree = "<group>";
+		};
+		0441AA041C2BC95F005A141D /* ConfirmPopView */ = {
+			isa = PBXGroup;
+			children = (
+				0441AA051C2BC992005A141D /* ConfirmPayPopView.h */,
+				0441AA061C2BC992005A141D /* ConfirmPayPopView.m */,
+			);
+			name = ConfirmPopView;
+			sourceTree = "<group>";
+		};
+		0441AA091C2BCC9B005A141D /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				0441AA101C2BCCBC005A141D /* SynthesizeSingleton.h */,
+				0441AA0A1C2BCCA6005A141D /* Toast+UIView.h */,
+				0441AA0B1C2BCCA6005A141D /* Toast+UIView.m */,
+				0441AA0C1C2BCCA6005A141D /* ToastDisplay.h */,
+				0441AA0D1C2BCCA6005A141D /* ToastDisplay.m */,
+			);
+			name = Toast;
+			sourceTree = "<group>";
+		};
+		0441AA111C2BD54B005A141D /* ZLTextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				0441AA121C2BD57A005A141D /* ZLTextFiled.h */,
+				0441AA131C2BD57A005A141D /* ZLTextFiled.m */,
+			);
+			name = ZLTextFiled;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0441AA141C2BD57A005A141D /* ZLTextFiled.m in Sources */,
+				0441AA0F1C2BCCA6005A141D /* ToastDisplay.m in Sources */,
+				0441AA071C2BC992005A141D /* ConfirmPayPopView.m in Sources */,
+				0441AA0E1C2BCCA6005A141D /* Toast+UIView.m in Sources */,
 				0441A9D91C2BC8E6005A141D /* ViewController.m in Sources */,
 				0441A9D61C2BC8E6005A141D /* AppDelegate.m in Sources */,
 				0441A9D31C2BC8E6005A141D /* main.m in Sources */,
@@ -411,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PwdInputConfirmPopView/PrefixHeader.pch";
 				INFOPLIST_FILE = PwdInputConfirmPopView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhanglei.PwdInputConfirmPopView;
@@ -422,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PwdInputConfirmPopView/PrefixHeader.pch";
 				INFOPLIST_FILE = PwdInputConfirmPopView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhanglei.PwdInputConfirmPopView;
